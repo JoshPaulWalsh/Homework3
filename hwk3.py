@@ -11,7 +11,11 @@
 #
 # Hint: Mold data according to the way you are going to use it: it's a shame
 #       you can't index into a number...
-
+def same_first_digit(number_one, number_two, number_three):
+    if number_one == number_two and number_two == number three:
+        return True
+    else:
+        return False
 
 
 # Function 2: String Reversal
@@ -20,9 +24,13 @@
 # the string with its characters in inverted order.
 #
 # Don't be a tool and just call the built-in function reversed()
-
-
-
+def reverse(word):
+    i=len(word)
+    new_word=''
+    while i>=0:
+        new_word+=word[i-1]
+        i-=1
+    return new_word
 # Function 3: Palindrome Detection
 #
 # Write a function called is_palindrome() which takes in a single string
@@ -36,8 +44,13 @@
 # some how.
 #
 # HINT: If only there was some way to obtain a backwards version of a string...
-
-
+def is_palindrome(word):
+    word.replace(' ','')
+    if word.reverse==word:
+        return True
+    else:
+        return False
+   
 
 # Function 4: String to ASCII Codes
 #
@@ -51,7 +64,12 @@
 #
 # HINT: There is a built in function that can do the char --> ASCII code
 #       conversion for you; you just have to find it.
-
+def str_to_ascii(word):
+    number=[]
+    for i in word:
+        number+=ord(i)
+    return number
+    
 
 
 # Function 5: Get Piece Value
@@ -74,7 +92,15 @@
 #
 # To get the intended practice for this problem, don't use *any* if statements
 
-
+def get_piece_value(chess_piece):
+    piece_values = {
+        'pawn': 1,
+        'bishop': 3,
+        'knight': 3,
+        'rook': 5,
+        'queen': 9
+    }
+    return piece_values.setdefault(chess_piece.lower, None)
 
 # Function 6: Formatting Dates
 #
@@ -84,4 +110,9 @@
 #
 # Hint: One part of the date string is really easy, and one part has a
 #       surprising number of edge cases
+
+def format_date(date):
+    formatted_year=''
+    for i in date(3)
+        formatted_year+=date[i]
 
