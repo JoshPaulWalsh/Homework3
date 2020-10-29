@@ -112,7 +112,30 @@ def get_piece_value(chess_piece):
 #       surprising number of edge cases
 
 def format_date(date):
-    formatted_year=''
-    for i in date(3)
-        formatted_year+=date[i]
+    formatted_year=date[0:4]
+    numbered_months = {
+        '01': 'January'
+        '02': 'February'
+        '03': 'March'
+        '04': 'April'
+        '05': 'May'
+        '06': 'June'
+        '07': 'July'
+        '08': 'August'
+        '09': 'September'
+        '10': 'October'
+        '11': 'November'
+        '12': 'December'
+    }
+    formatted_month=numbered_months[date[4:6]]
+    formatted_day=int(date[6:8])
+    if formatted_day == 1 or formatted_day == 21 or formatted_day == 31:
+       formatted_day = str(formatted_day) + 'st'
+    elif formatted_day == 2 or formatted_day == 22:
+       formatted_day = str(formatted_day) + 'nd'
+    elif formatted_day == 3 or formatted_day == 23:
+       formatted_day = str(formatted_day) + 'rd'
+    else:
+       formatted_day = str(formatted_day) + 'th'
 
+    return formatted_month + ' ' + formatted_day + ', ' + formatted_year
