@@ -12,7 +12,7 @@
 # Hint: Mold data according to the way you are going to use it: it's a shame
 #       you can't index into a number...
 def same_first_digit(number_one, number_two, number_three):
-    if number_one == number_two and number_two == number three:
+    if number_one == number_two and number_two == number_three:
         return True
     else:
         return False
@@ -50,7 +50,7 @@ def is_palindrome(word):
         return True
     else:
         return False
-   
+
 
 # Function 4: String to ASCII Codes
 #
@@ -69,7 +69,7 @@ def str_to_ascii(word):
     for i in word:
         number+=ord(i)
     return number
-    
+
 
 
 # Function 5: Get Piece Value
@@ -114,17 +114,17 @@ def get_piece_value(chess_piece):
 def format_date(date):
     formatted_year=date[0:4]
     numbered_months = {
-        '01': 'January'
-        '02': 'February'
-        '03': 'March'
-        '04': 'April'
-        '05': 'May'
-        '06': 'June'
-        '07': 'July'
-        '08': 'August'
-        '09': 'September'
-        '10': 'October'
-        '11': 'November'
+        '01': 'January',
+        '02': 'February',
+        '03': 'March',
+        '04': 'April',
+        '05': 'May',
+        '06': 'June',
+        '07': 'July',
+        '08': 'August',
+        '09': 'September',
+        '10': 'October',
+        '11': 'November',
         '12': 'December'
     }
     formatted_month=numbered_months[date[4:6]]
